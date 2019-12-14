@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Sandbox</title>
+		<style type="text/css">
+			
+			.box {
+				width: 250px;
+				height: 250px; 
+				float: left;
+				margin: 20px;
+				padding: 20px;
+			}
+
+			.dashed {
+				border: 2px dashed black;
+			}
+
+			.input {
+				padding: 5px;
+				margin: 5px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1> Exercise </h1>
+		<div class="box" style="border: 3px solid black">
+			<form action="#" method="POST" id="form" onsubmit="return false;">
+			<input class="input" type="text" placeholder="Enter your name" id="name" /> <br/>
+			<input class="input"type="text" placeholder="Enter your lastname" id="lastname" /> <br/>
+			<input class="input"type="text" placeholder="Enter your age" id="age" /> <br/>
+			<input class="input"type="submit" value="Submit" id="submit-button">
+		</form>
+		</div>
+		<div class="box dashed" id="s">
+			<h2>User info</h2> 
+			<hr/>
+			<p id="name-p">
+				<strong> Name: </strong> <span></span>
+			</p>
+			<p id="lastname-p">
+				<strong> Lastname: </strong> <span></span>
+			</p>
+			<p id="age-p">
+				<strong> Age: </strong> <span></span>
+			</p>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+      //recursive function that calculates the factorial of n.
+      function factorial (n) {
+
+        //creating cache if it doesn't exist.
+        if (!this.cache)
+          this.cache = {};
+
+        //returns cache if it exists.
+        if (this.cache[n])
+          return (this.cache[n]);
+        else {
+          if (n == 1)
+            return (1);
+          else {
+            //saves data in cache.
+            this.cache [n] = n * factorial (n-1);
+            return (this.cache [n]);
+          }
+        }
+      }
+
+      console.log (factorial (7));
+      console.log (factorial (5));
+
+    </script>
+  </body>
+</html>

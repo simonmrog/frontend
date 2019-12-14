@@ -1,0 +1,18 @@
+body {
+   background-color: #666666;
+   color: white;
+}
+
+#money {
+   padding: 5px
+}
+
+#dispense {
+   background-color: #009B00;
+   color: white;
+   padding: 7px;
+   margin: 0 10px;
+   border-style: none;
+   font-weight: bold;
+}
+

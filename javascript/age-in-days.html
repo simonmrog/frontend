@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+        function ageInDays (birthDate, actualDate) {
+
+            const day = 24 * 60 * 60 * 1000;
+            const difference = Math.abs (actualDate - birthDate);
+            return Math.floor (difference / day);
+        }
+
+        const today = new Date ();
+        const birthDate = new Date (1994, 1, 19);
+
+        const age = ageInDays (birthDate, today);
+        console.log ("You have " + age + " days.");
+
+    </script>
+  </body>
+</html>

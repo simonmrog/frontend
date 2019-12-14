@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Responsive Form</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+
+   <div id="site-wrapper">
+      <h1>Responsive Form</h1>
+
+      <div id="form-wrapper">
+
+      <div class="row">
+         <label class="col-25" for="firstname">First Name</label>
+         <input class="col-75" type="text" id="firstname" name="fname" placeholder="First Name...">
+      </div>
+
+      <div class="row">
+         <label class="col-25" for="lastname">Last Name</label>
+         <input class="col-75" type="text" id="lastname" name="lname" placeholder="Last Name...">
+      </div>
+
+      <div class="row">
+         <label class="col-25" for="country">Country</label>
+         <select class="col-75" name="country" id="country">
+            <option value="colombia">Colombia</option>
+            <option value="peru">Peru</option>
+            <option value="bolivia">Bolivia</option>
+         </select>
+      </div>
+
+      <div class="row">
+         <label class="col-25" for="subject">Subject</label>
+         <textarea class="col-75" name="subject" id="subject" placeholder="Write something..""></textarea>
+      </div>
+
+      <div class="row" style="overflow: hidden;">
+         <input type="submit" value="Submit">
+      </div>
+      </div>
+   </div>
+
+</body>
+</html>

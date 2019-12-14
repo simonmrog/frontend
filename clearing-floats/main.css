@@ -1,0 +1,34 @@
+* {
+   box-sizing: border-box;
+}
+
+.box {
+   border-style: solid;
+}
+
+.float {
+   float: left;
+}
+
+.using-on-parent {
+   content: "";
+   clear: both;
+   display: table;
+}
+
+.using-overflow {
+   overflow: auto;
+}
+
+.clearfix {
+   clear: both;
+}
+
+.using-inline {
+   font-size: 0;
+}
+
+.inline {
+   display: inline-block;
+   font-size: 16px;
+}

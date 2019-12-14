@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Portfolio</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <style>
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      #site-container {
+         width: 750px;
+         border: 1px solid #DFDCE4;
+         margin: 0 auto;
+      }
+
+      header {
+         background-color: #5FC3B2;
+         color: white;
+         padding: 20px;
+         font-size: 1.5em;
+      }
+
+      #hero h1 {
+         background-color: #4CAF50;
+         display: inline-block;
+         color: white;
+         padding: 10px;
+      }
+
+      #description {
+         text-align: center;
+         padding: 20px;
+         background-color: #f3f3f3;
+         width: 90%;
+         margin: 25px auto;
+         margin-bottom: 10px;
+      }
+      
+      #description h1 {
+         color: #F84C00;
+         font-size: 30px;
+         padding: 10px 0 20px 0;
+      }
+
+      #description p {
+         color: #383838;
+         text-align: justify;
+         padding: 20px;
+      }
+
+      #projects {
+         padding: 10px 0;
+         width: 90%;
+         margin: 0 auto;
+      }
+
+      #projects-title {
+         background-color: #f3f3f3;
+         color: #F84C00;
+         text-align: center;
+         padding: 20px;
+         font-size: 30px;
+      }
+
+      .project {
+         background-color: #f3f3f3;
+         margin: 15px auto;
+         padding: 20px;
+         font-size: 0;
+      }
+
+      .project-title {
+         color: #F84C00;
+         padding: 15px;
+         font-size: 25px;
+      }
+
+      .project-description {
+         color: #383838;
+         display: inline-block;
+         width: 50%;
+         border-color:red;
+         vertical-align: top;
+         font-size: 16px;
+         padding: 20px 20px;
+         text-align: justify;
+      }
+
+      .project-image {
+         display: inline-block;
+         width: 50%;
+         vertical-align: top;
+         padding: 20px 5px;
+      }
+
+      /* PARA QUE EL PDF QUEDE EN BUEN FORMATO */
+
+      .separator1 {
+         height: 70px;
+      }
+
+      .project2 {
+         margin-bottom: 5px;
+         padding-bottom: 0;
+      }
+      
+      .separator3 {
+         height: 30px;
+      }
+
+      .separator4 {
+         height: 30px;
+      }
+
+      .separator5 {
+         height: 250px;
+      }
+
+   </style>
+
+</head>
+
+<body>
+   <div id="site-container">
+      
+      <header>
+         <h1>Portafolio</h1> 
+      </header>
+
+      <section id="hero">
+         <h1>Simón Murillo Gómez</h1>
+      </section>
+
+      <section id="description">
+         <h1>Descripción</h1>
+         <p>Soy Físico de la Universidad de Antioquia y programador aficionado. Me he caracterizado por la tenacidad y el perfeccionismo para alcanzar mis objetivos. Siempre he sentido un excesivo gusto por la programación, por eso me he encargado de estudiarla empíricamente, con miras a poder ejercerla en la profesión de vida. Tengo buen nivel matemático y manejo la programación imperativa y la programación orientada a objetos. He trabajado con lenguajes para  maquetado como HTML y CSS, lenguajes de programación como C, C++, Java, Python, JavaScript, y a nivel muy básico, PHP. Cuento con una buena lógica y fundamentos de programación, además de una buena capacidad de autoestudio y aprendizaje rápido, con el fin de aprender cualquier lenguaje requerido.</p>
+      </section>
+
+
+      <!-- PROJECTS -->
+      <section id="projects">
+
+         <h1 id="projects-title">Proyectos</h1>
+
+         <!-- PROJECT 1 -->
+         <article class="project">
+            <h1 class="project-title">BigInt.h (C/C++)</h1>
+            <hr />
+            <p class="project-description">BigInt.h es un archivo de cabecera escrito en C y C++ cuyo objetivo es el de operar números astronómicos (números de hasta un millón de dígitos), basado en considerar cada número como una cadena de caracteres. Contiene funciones de comparación y la sobrecarga de los operadores aritméticos, así como de los operadores de comparación y algunos operadores compuestos de asignación. También posee una función para calcular el factorial de dichos números. </p>
+            <img class="project-image" src="img/fig1.png" alt="Project image"/>
+         </article>
+
+         <div class="separator1"></div>
+
+         <!-- PROJECT 2 -->
+         <article class="project project2">
+            <h1 class="project-title">Acelerador de partículas (Python)</h1>
+            <hr />
+            <p class="project-description">Este proyecto, escrito en Python, hace uso de la librería VPython 7 para toda la parte visual. Consiste en una simulación sencilla sobre cómo funciona un acelerador lineal de partículas usando una diferencia de potencial. Recibe parámetros como longitud de los tubos que componen el acelerador, número de tubos, voltaje aplicado, carga y masa de la partícula, y por medio de un proceso de extrusión, se dibuja el acelerador. La animación se construye por medio de una relación de proporcionalidad entre la velocidad teórica de la partícula y la velocidad con la cuál se da el cambio de posición de la partícula en la animación. Está escrita usando programación orientada a objetos.</p>
+            <img class="project-image" src="img/fig2.png" alt="Project image"/>
+            <img class="project-image" src="img/fig2-1.png" alt="Project image"/>
+         </article>
+
+         <!-- PROJECT 3 -->
+         <article class="project">
+            <h1 class="project-title">ATM (HTML+CSS+JavaScript)</h1>
+            <hr />
+            <p class="project-description">Aplicación web que muestra un modelo sencillo de cómo funciona el algoritmo para los retiros que se realizan en un cajero, es decir, cómo se deben distribuir los billetes para entregar la cantidad de dinero solicitada. Se usa HTML y CSS para crear la estructura y apariencia de la página web y programación orientada a objetos en JavaScript para hacer los cálculos.</p>
+            <img class="project-image" src="img/fig3.png" alt="Project image"/>
+         </article>   
+
+         <div class="separator3"></div>
+
+         <!-- PROJECT 4 -->
+         <article class="project">
+            <h1 class="project-title">A Memory Game (HTML+CSS+JavaScript)</h1>
+            <hr />
+            <p class="project-description">La aplicación web es un juego de memoria en el cual, dada una secuencia aleatoria de números generada en JavaScript y mostrada por medio de CSS, se debe reproducir exactamente por el usuario. Un nivel N tiene una secuencia de longitud N, el nivel máximo es 50.</p>
+            <img class="project-image" src="img/fig4.png" alt="Project image"/>
+         </article>   
+
+         <div class="separator4"></div>         
+
+         <!-- PROJECT 5 -->
+         <article class="project">
+            <h1 class="project-title">Geometric Shapes (Java)</h1>
+            <hr />
+            <p class="project-description">Geometric Shapes es un programa sencillo escrito en Java para el cálculo de áreas y perímetros de polígonos regulares e irregulares. Soporta figuras tales como rombos, paralelogramos, trapezoides, circulos, triángulos, etc. Así como una opción de polígono regular de N lados.</p>
+            <img class="project-image" src="img/fig5.png" alt="Project image"/>
+         </article>
+         
+         <div class="separator5"></div>
+
+         <!-- PROJECT 6 -->
+         <article class="project">
+            
+            <h1 class="project-title">Client's CRUD (Python)</h1>
+            <hr />
+            <p class="project-description">Este es un programa escrito en Python 3 con el fin de, almacenando los datos en un archivo .csv, ser un ejemplo de cómo se construye una aplicación tipo CRUD (create-read-update-delete application) sencilla y óptima. Para la creación y actualización del archivo .csv se usan algunas facilidades de las librerías os, sys y csv de Python.</p>
+            <img class="project-image" src="img/fig6.png" alt="Project image"/>
+         </article>
+
+      </section>
+
+   </div>
+</body>
+
+</html>

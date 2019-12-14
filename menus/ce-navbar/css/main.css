@@ -1,0 +1,66 @@
+/* Colors
+background: #023859;
+background: #12171A;
+background: #19242C; 
+background blue: #005A8C*/
+
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+   border: 1px solid black;
+}
+
+#main-menu {
+   position: relative;
+   background: #023859;
+   color: #fff;
+   max-width: 1024px;
+   margin: auto;
+}
+
+#main-menu a {
+   display: inline-block;
+   position: relative;
+   color: #fff;
+   padding: 12px;
+   text-align: center;
+   font-size: 22px;
+}
+
+#main-menu a:hover {
+   background: #ddd;
+   color: black;
+}
+
+#main-menu .active {
+   background-color: yellow;
+   color: black;
+}
+
+#main-menu #menu-icon {
+   padding: 12px;
+   font-size: 22px;
+   display: none;
+}
+
+
+@media all and (max-width: 600px) {
+
+   #main-menu #menu-icon {
+      display: inline-block;
+   }
+
+   #main-menu .active {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+   }
+
+   #main-menu a:not(.active) {
+      display: block;
+      right: 50%;
+   }
+}

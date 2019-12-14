@@ -1,0 +1,60 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+.active {
+   background-color: #005A8C;
+   color: white;
+}
+
+nav {
+   position: fixed;
+   width: 25%;
+   height: 100%;
+   background-color: #F1F1F1;
+   overflow: auto;
+}
+
+nav li a {
+   display: block;
+   color: black;
+   padding: 15px;
+}
+
+nav li a:hover {
+   background-color: #555;
+   color: white;
+}
+
+@media all and (max-width: 900px) {
+
+   nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+   }
+
+   nav li {
+      display: inline-block;
+   }
+}
+
+@media all and (max-width: 400px) {
+
+   nav {
+      overflow: hidden;
+   }
+
+   nav li {
+      display: block;
+      text-align: center;
+   }
+
+   nav li a {
+      width: 100%;
+   }
+}

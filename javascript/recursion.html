@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+      function div (dividend, divisor) {
+
+        let diff = dividend - divisor;
+        if (diff > 0)
+          return (1 + div (diff, divisor));
+        else
+          return (0);
+      }
+
+      const n1 = 13;
+      const n2 = 4;
+      const n = div (13, 4);
+      console.log (n1 + "/" + n2 + " = " + n);
+
+    </script>
+  </body>
+</html>

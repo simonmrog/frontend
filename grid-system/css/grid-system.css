@@ -1,0 +1,26 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+}
+
+a:link, a:visited, a:active, a:hover, a:focus {
+   text-decoration: none;
+}
+
+.content {
+   position: relative;
+   margin: auto;
+   width: 100%;
+   height: auto;
+   clear: both;
+}
+
+.row {
+   position: relative;
+   margin: auto;
+   width: 100%;
+   height: auto;
+   clear: both;
+}

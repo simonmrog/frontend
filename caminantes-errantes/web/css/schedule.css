@@ -1,0 +1,144 @@
+.table a {
+   color: #f0f0f0;
+   text-decoration: underline;
+}
+
+div {
+   display: block;
+}
+
+#schedule-wrapper {
+   background: #3B3B3B;
+   text-align: center;
+}
+
+#main-title {
+   padding-top: 400px;
+   color: #E1E111;
+}
+
+.table-wrapper {
+   width: 96%;
+   padding: 0 20px 20px 20px;
+   margin: 0 auto;
+}
+
+/* TABLE STYLES */
+
+.table {
+   border-radius: 5px;
+   font-family: Georgia, serif;
+   border: 6px solid #346DA4;
+   background-color: #555555;
+   width: 100%;
+   text-align: left;
+   color: white;
+   font-weight: bold;
+   width: 100%;
+}
+
+.table td, .table th {
+   padding: 5px 0 5px 10px;
+}
+
+.table tbody td {
+   font-size: 16px;
+   color: #F0F0F0;
+}
+
+.table thead {
+   background: #346DA4;
+   background: -moz-linear-gradient(top, #6791bb 0%, #487bad 66%, #346DA4 100%);
+   background: -webkit-linear-gradient(top, #6791bb 0%, #487bad 66%, #346DA4 100%);
+   background: linear-gradient(to bottom, #6791bb 0%, #487bad 66%, #346DA4 100%);
+   border-bottom: 0px solid #444444;
+}
+
+.table thead th {
+   font-size: 20px;
+   font-weight: bold;
+   color: #F0F0F0;
+   text-align: left;
+   border-left: 1px solid #0048A4;
+}
+
+.table thead th:first-child {
+   border-left: none;
+}
+
+.table tfoot {
+   font-weight: bold;
+   background: #346DA4;
+   background: -moz-linear-gradient(top, #6791bb 0%, #487bad 66%, #346DA4 100%);
+   background: -webkit-linear-gradient(top, #6791bb 0%, #487bad 66%, #346DA4 100%);
+   background: linear-gradient(to bottom, #6791bb 0%, #487bad 66%, #346DA4 100%);
+   border-bottom: 0px solid #444444;
+}
+
+.table tfoot td {
+   padding-top: 8px;
+   padding-right: 20px;
+   font-size: 16px;
+   text-align: right;
+   color: #0F0F0F;
+}
+
+.table tbody tr:nth-child(even) {
+   background-color: #5182B1;
+}
+
+@media all and (max-width: 767px) {
+
+   #schedule-wrapper {
+      height: auto;
+      margin: 0;
+      border-radius: 0;
+   }
+
+   .table, thead, tbody, tfoot, th, td, tr {
+      display: block;
+   }
+
+   .table thead tr {
+      display: none;
+   }
+
+   .table tbody tr {
+      border-bottom: 2px solid #eee;
+   }
+
+   .table td {
+      position: relative;
+      padding-left: 50%;
+      border-bottom: 1px solid #eee;
+   }
+
+   td:before {
+      position: absolute;
+      font-weight: bold;
+      padding-right: 10px;
+      width: 45%;
+      top: 5px;
+      left: 5px;
+   }
+
+   td:nth-child(1):before {
+      content: "Evento:";
+   }
+
+   td:nth-child(2):before {
+      content: "Fecha:";
+   }
+
+   td:nth-child(3):before {
+      content: "Precio:";
+   }
+
+   td:nth-child(4):before {
+      content: "Dificultad:";
+   }
+
+   tfoot td:nth-child(1):before {
+      content: "";
+   }
+}

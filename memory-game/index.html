@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Some Memory Game</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="title">
+        <h1 id="level" class="level"> <font color="white"> Level: 1 </font> </h1>
+        <h1 id="score" class="score"> <font color="white"> Score: 0 </font> </h1>
+        <h1 id="top-score" class="top-score"> <font color="white"> Top Score: 0 </font> </h1>
+    </div>
+    <div class="gameboard">
+      <div id="blue" class="color blue left" data-color="blue"></div>
+      <div id="red" class="color red right" data-color="red"></div>
+      <div id="yellow" class="color yellow left" data-color="yellow"></div>
+      <div id="green" class="color green right" data-color="green"></div>
+      <button id="startButton" class="start-btn" onclick="startGame ()">Start!</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js">
+    </script>
+    <script src="game.js"> </script>
+  </body>
+</html>

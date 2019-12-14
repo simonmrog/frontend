@@ -1,0 +1,54 @@
+* {
+   box-sizing: border-box;
+}
+
+iframe {
+   width: 49%;
+   position: absolute;
+   height: 504px;
+   resize: both;
+   bottom: 0;
+}
+
+#page {
+   right: 0;
+}
+
+header {
+   background-color: #666666;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 35px;
+   padding: 30px;
+}
+
+section {
+   overflow: hidden;
+}
+
+aside {
+   background-color: #CCCCCC;
+   float: left;
+   width: 30%;
+   padding: 20px;
+   height: 300px;
+}
+
+aside nav {
+   list-style: none;
+}
+
+article {
+   background-color: #F1F1F1;
+   float: left;
+   padding: 20px;
+   width: 70%;
+   height: 300px;
+}
+
+footer {
+   background-color: #777777;
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
