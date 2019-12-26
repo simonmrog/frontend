@@ -1,0 +1,401 @@
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+   font-family: sans-serif;
+}
+
+body {
+   background: url("../img/background.jpg");
+   background-repeat: repeat;
+   background-position: top center;
+   height: 1080px;
+}
+
+header {
+   background: url("../img/cabezote.jpg");
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 83px;
+}
+
+#logo {
+   position: absolute;
+   top: 17px;
+   left: 15px;
+   width: 188px;
+   height: 47px;
+}
+
+nav {
+   background: url("../img/nav.jpg");
+   border-bottom: 1px solid #bcd1cb;
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 45px;
+}
+
+nav ul {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 500px;
+   height: 45px;
+}
+
+nav ul li {
+   float: left;
+   width: 124px;
+   line-height: 45px;
+   text-align: center;
+   font-size: 14px;
+   color: white;
+   border-right: 1px solid #bcd1cb;
+}
+
+nav ul li a {
+   color: white;
+}
+
+#slide {
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 301px;
+}
+
+#slide-buttons {
+   background: url("../img/backBotonesSlide.jpg");
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 26px;
+}
+
+#slide-buttons ul {
+   position: relative;
+   margin: auto;
+   width: 100px;
+   height: 26px;
+}
+
+#slide-buttons ul li {
+   float: left;
+   width: 10px;
+   height: 10px;
+   border-radius: 100%;
+   border: 3px solid white;
+   margin: 3px 2px;
+   background: #232d80;
+}
+
+#index-section {
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 299px;
+   background: white;
+}
+
+#index-section ul li {
+   float: left;
+   width: 333px;
+   height: 299px;
+}
+
+#index-section ul li h1 {
+   margin: 25px 29px;
+   font-weight: 100;
+   font-size: 25px;
+}
+
+#index-section ul li p {
+   margin: 23px 30px;
+   font-size: 15px;
+
+}
+
+#index-section ul li img {
+   width: 273px;
+   height: 83px;
+   background: silver;
+   margin: 0 30px 1px 32px;
+}
+
+#desc-section {
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 299px;
+   background: white;
+}
+
+#desc-section h1 {
+   position: relative;
+   top: 15px;
+   left: 27px;
+   color: #1f1d21;
+   font-weight: 100;
+}
+
+#desc-section hr {
+   position: relative;
+   top: 20px;
+   width: 950px;
+   margin: auto;
+   border: 1px solid #c6c6c6;
+}
+
+#desc-section p {
+   position: relative;
+   top: 40px;
+   width: 950px;
+   margin: auto;
+   text-align: justify;
+}
+
+#desc-section p img {
+   float: left;
+   width: 272px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+}
+
+#services-section {
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 299px;
+   background: white;
+}
+
+#services-section #services-box {
+   position: relative;
+   top: 18px;
+   width: 935px;
+   height: 262px;
+   margin: auto;
+   box-shadow: 0px 0px 30px #222;
+}
+
+#services-section #services-box #list {
+   position: absolute;
+   top: 20px;
+   left: 15px;
+   width: 151px;
+   height: 220px;
+   cursor: pointer;
+}
+
+#services-section #services-box #list li{
+   width: 151px;
+   height: 72px;
+   margin: 2px 0;
+}
+
+#services-section #services-box #view {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   width: 732px;
+   height: 220px;
+}
+
+#services-section #services-box #view li {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+#services-section #services-box #view li h1 {
+   position: absolute;
+   z-index: 1;
+   top: 20px;
+   left: 20px;
+}
+
+#services-section #services-box #view li p {
+   position: absolute;
+   z-index: 1;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.7);
+   width: 97%;
+   line-height: 60px;
+   color: white;
+   padding-left: 20px;
+}
+
+#contact-section {
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 299px;
+   background: white;
+   background: url("../img/contactenos.jpg");
+}
+
+#contact-section form {
+   position: relative;
+   margin: auto;
+   top: 32px;
+   width: 910px;
+   height: 232px;
+   background: white;
+}
+
+#contact-section form input#name {
+   position: absolute;
+   padding: 10px;
+   width: 272px;
+   height: 45px;
+   background: #dce9d7;
+   border: none;
+}
+
+#contact-section form input#email {
+   position: absolute;
+   top: 81px;
+   padding: 10px;
+   width: 272px;
+   height: 45px;
+   background: #dce9d7;
+   border: none;
+}
+
+#contact-section form input#subject {
+   position: absolute;
+   bottom: 0;
+   padding: 10px;
+   width: 272px;
+   height: 45px;
+   background: #dce9d7;
+   border: none;
+}
+
+#contact-section form textarea#message {
+   position: absolute;
+   right: 0;
+   padding: 10px;
+   width: 581px;
+   height: 128px;
+   background: #dce9d7;
+   border: none;
+}
+
+#contact-section form input#send {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 604px;
+   height: 69px;
+   border: none;
+   color: white;
+   background: #1a1d20;
+}
+
+#bottom {
+   background: url("../img/backBottom.jpg");
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 190px;
+}
+
+#bottom ul li {
+   float: left;
+   width: 250px;
+   height: 190px;
+}
+
+#bottom ul li h1 {
+   margin: 13px 18px;
+   color: white;
+   font-size: 18px;
+   font-weight: 100;
+}
+
+#bottom ul li ol {
+   position: relative;
+   top: 15px;
+   left: 17px;
+   width: 190px;
+   height: 80px;
+}
+
+#bottom ul li ol li {
+   height: 20px;
+   text-align: left;
+   font-size: 15px;
+   color: white;
+   list-style-image: url("../img/list.png");
+}
+
+#bottom ul li img {
+   position: relative;
+   top: 15px;
+   left: 15px;
+   width: 95px;
+   height: 95px;
+   border: 4px solid white;
+   background: url("../img/imgGaleria.jpg");
+   background-size: cover;
+}
+
+#bottom ul li ul {
+   position: relative;
+   top: 11px;
+   left: 15px;
+   width: 200px;
+   height: 40px;
+}
+
+#bottom ul li ul li {
+   float: left;
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   background: white;
+   margin: 5px;
+}
+
+#bottom ul li ul li:first-child {
+   background: url("../img/facebook.jpg");
+   background-size: cover;
+}
+
+#bottom ul li ul li:nth-child(2) {
+   background: url("../img/iconoGoogle.jpg");
+   background-size: cover;
+}
+
+#bottom ul li ul li:nth-child(3) {
+   background: url("../img/iconoPinterest.jpg");
+   background-size: cover;
+}
+
+#bottom ul li ul li:last-child {
+   background: url("../img/iconoTwitter.jpg");
+   background-size: cover;
+}
+
+#bottom ul li ul li a {
+   float: left;
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+}
+
+footer {
+   position: relative;
+   margin: auto;
+   width: 1000px;
+   height: 62px;
+   text-align: center;
+   color: white;
+   line-height: 62px;
+   font-size: 15px;
+   background: black;
+}

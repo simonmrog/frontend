@@ -1,0 +1,324 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid blue;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0 10px 0 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.header {
+  background-color: #19242c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.header nav {
+  height: inherit;
+}
+
+.header ul {
+  margin: 0;
+  display: flex;
+  height: inherit;
+  align-items: center;
+  list-style: none;
+}
+
+.header ul li {
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+.hero {
+  height: 300px;
+  background-color: #19242c;
+  border: 1px solid grey;
+  border-top: 1px solid black;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.project {
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-languages, project-date, project-url {
+  margin: 10px 0;
+}
+
+.project-details {
+  width: 500px;
+  font-size: 20px;
+}
+
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.project-image-wrapper {
+  width: 500px;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.events-title {
+  margin-left: 20px;
+}
+
+.event {
+  border-radius: 15px;
+  margin: 10px;
+  width: 480px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: #f4fbff;
+}rillo <br/>
+          <strong> Physicist </strong>  and enthusiast <strong> programmer </strong> <br/>
+        </h1>
+
+.event-image {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-details {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  padding: 20px;rillo <br/>
+          <strong> Physicist </strong>  and enthusiast <strong> programmer </strong> <br/>
+        </h1>
+  position: relative;
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  border: 1px solid #056fff;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #056fff;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+￼rillo <br/>
+          <strong> Physicist </strong>  and enthusiast <strong> programmer </strong> <br/>
+        </h1>
+.form-email input {
+  border-color: grey;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 5px 20px 5px 25px;
+  background-image: url(images/envelope.svg);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+
+.social-link {
+  width: 50px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+￼
+.form-email input {
+  border-color: grey;
+  border-radius: 5px;  margin: 10px auto 0;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  background-image: url("images/envelope.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.social-link {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+
+.social-link.twitter {
+  background-image: url("images/twitter.svg");
+}
+
+.social-link.facebook {
+  background-image: url("images/facebook.svg");
+}
+
+.social-link.github {
+  background-image: url("images/github.svg");
+}
+
+.social-link.instagram {
+  background-image: url("images/instagram.svg");
+}
+
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer img {
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.footer a {
+  color: white;
+  padding: 0 30px 0 0;
+}
+
+.social-link {
+  height: 50px;
+  display: inline-block;
+  background-size: 50px 50px;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}

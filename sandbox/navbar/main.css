@@ -1,0 +1,44 @@
+nav {
+   background: rebeccapurple;
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+}
+
+#menu-button {
+   background: salmon;
+   color: #fff;
+   padding: 10px 0;
+   border: 2px solid #fff;
+}
+
+nav a {
+   background: salmon;
+   color: #fff;
+   padding: 10px 30px;
+   text-decoration: none;
+}
+
+nav a:hover {
+   background: rosybrown;
+}
+
+@media (min-width: 601px) {
+   #menu-button {
+      display: none;
+   }
+}
+
+@media (max-width: 600px) {
+   nav {
+      flex-direction: column;
+   }
+
+   nav a {
+      margin: 10px 0;
+   }
+
+   .dissapears {
+      display: none;
+   }
+}

@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,100italic,300italic);
+
+html {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, figure, ul {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #0BC5D8;
+}
+
+a:hover {
+	color: #EA6E39;
+}
+
+a:visited {
+	color: #AAAAAA;
+}
+
+a:active {
+	color: #FF0000;
+}
+
+.fp-video, .ft-art, .menu-item {
+	display: inline-block;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.logo {
+	margin: 25px;
+	text-align: center;
+}
+
+nav {
+	background-color: #2E353E;
+	text-align: center;
+}
+
+.menu-item {
+	text-transform: uppercase;
+}
+
+.menu-item a div {
+	padding: 20px;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.menu-item:hover {
+	background-color: #0BC5D8;
+}
+
+.featured {
+	background-color: #F2F2F2;
+}
+
+.fp-video {
+	width: 55%;
+	padding: 2em;
+	vertical-align: top;
+}
+
+.ft-art {
+	width: 30%;
+	padding: 2em;
+	vertical-align: top; 
+}
+
+.button-container {
+	text-align: center;
+	background-color: #EA6E39;
+	margin: 0 auto;
+}
+
+.button-container a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.button-container:hover {
+	background-color: #1FBEA4;
+}
+
+.button {
+	padding: 15px;
+}
+
+article {
+	padding: 30px;
+	background-color: #F2F2F2;
+	margin: 20px;
+}
+
+.art-image {
+	display: inline-block; 
+	width: 210px;
+	margin-right: 10px;
+}
+
+
+.art-cont {
+	display: inline-block;
+	width: 740px;
+	vertical-align: top;
+}
+
+figcaption {
+	background-color: #1FBEA4;
+	color: #FFF;
+	text-align: center;
+	padding: 5px;
+}
+
+article h1 {
+	border-bottom: solid thin black;
+}
+
+footer {
+	background-color: #2E353E;
+	color: #FFF;
+	line-height: 30px;
+	text-align: center;
+	padding: 45px;
+}
