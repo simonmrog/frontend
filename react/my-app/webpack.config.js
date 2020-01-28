@@ -1,13 +1,21 @@
 const path = require ("path");
 const ExtractTextPlugin = require ('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require ("html-webpack-plugin");
+const { CleanWebpackPlugin } = require ("clean-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    app: "./src/index.js",
+    about: "./src/about.js"
+  },
   output: {
     path: path.resolve (__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "[name].bundle.js"
   },
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: "./dist"
+  },
   module: {
     rules: [
       {
@@ -35,7 +43,11 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin ("styles.css")
+    new CleanWebpackPlugin (),
+    new ExtractTextPlugin ("styles.css"),
+    new HtmlWebpackPlugin ({
+      title: "Webpack App"
+    })
   ],
   mode: "production"
 }
