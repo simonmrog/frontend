@@ -46,7 +46,14 @@ module.exports = {
     new CleanWebpackPlugin (),
     new ExtractTextPlugin ("styles.css"),
     new HtmlWebpackPlugin ({
-      title: "Webpack App"
+      filename: "index.html",
+      template: "./src/index.html",
+      chunks: ["app"]
+    }),
+    new HtmlWebpackPlugin ({
+      filename: "about.html",
+      template: "./src/about.html",
+      chunks: ["about"]
     })
   ],
   mode: "production"
