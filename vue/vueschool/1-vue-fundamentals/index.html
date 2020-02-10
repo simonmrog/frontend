@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Fundamentals</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="shopping-list">
+    <div class="header">
+      <h1>{{ header.toLocaleUpperCase() }}</h1>
+      <button class="btn btn-primary" v-if="state == 'default'" @click="changeState('edit')">Add Item</button>
+      <button class="btn btn-cancel" v-else @click="changeState('default')" >Cancel</button>
+    </div>
+    <div class="add-item-form" v-if="state == 'edit'">
+      <input type="text" placeholder="Add a new item"
+             v-model="newItem" @keyup.enter="saveItem">
+      <p>{{ characterCount }}</p>
+      <button class="btn btn-primary" :disabled="newItem.length == 0" @click="saveItem">Save Item</button>
+    </div>
+    <a v-bind:href="newItem" target="_blank">Dynamic Link</a>
+    <ul>
+      <li v-for="item in reversedItems"
+          :class="{'strikeout': item.purchased, 'priority': item.highPriority}"
+          @click="togglePurchased (item)">{{ item.label }}</li>
+    </ul>
+    <p v-if="items.length == 0">You've bought all your items</p>
+  </div>
+  <script src="https://unpkg.com/vue"></script>
+  <script>
+    let shoppingList = new Vue({
+      el: "#shopping-list",
+      data: {
+        state: "default",
+        header: "shopping list app",
+        newItem: "",
+        items: [
+          {
+            label: "10 party hats",
+            purchased: false,
+            highPriority: false
+          },
+          {
+            label: "2 board games",
+            purchased: true,
+            highPriority: false
+          },
+          { 
+            label: "20 cups",
+            purchased: false,
+            highPriority: true
+          }          
+        ]
+      },
+      computed: {
+        characterCount: function() {
+          return (this.newItem.length);
+        },
+        reversedItems: function() {
+          return (this.items.slice(0).reverse());
+        }
+      },
+      methods: {
+        saveItem: function() {
+          this.items.push({
+            label: this.newItem,
+            purchased: false
+          })
+          this.newItem = "";
+        },
+        changeState : function (stateValue) {
+          this.state = stateValue;
+          this.newItem = "";
+        },
+        togglePurchased: function (item) {
+          item.purchased = !item.purchased;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
