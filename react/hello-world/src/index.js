@@ -1,11 +1,13 @@
-// IMPORT THE REACT AND REACTDOM LIBRARIES
+"use strict";
+
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
 
-// CREATE A REACT COMPONENT
-const App = function () {
-   return (<div>Hello World!</div>);
-};
+class App extends React.Component {
+  render () {
+    return (<div>Hello World</div>);
+  }
+}
 
-// TAKE THE REACT COMPONENT AND SHOW IT ON THE SCREEN
-ReactDOM.render (<App />, document.querySelector ("#root"));
+ReactDOM.render (<App />, document.getElementById ("app"));
