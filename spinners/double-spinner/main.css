@@ -34,7 +34,6 @@
   border-right: 6px solid black;
   border-radius: 50%;
   animation: spin 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite forwards;
-;
 }
 
 @keyframes spin {
