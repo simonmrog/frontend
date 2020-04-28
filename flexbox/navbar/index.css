@@ -1,0 +1,24 @@
+html, body {
+  background-color: #fff;
+  margin: 10px;
+}
+
+.container {
+  padding: 0;
+  background-color: #144e53;
+}
+
+.container > li {
+  background-color: #144e53;
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #9cca3e;
+  box-sizing: border-box;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.container > li:hover {
+  background-color: #708980;
+}

@@ -1,0 +1,14 @@
+.container {
+  border: 5px solid #4c4f6a;
+  display: flex;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex: 1 1 50%;
+  }
+}
