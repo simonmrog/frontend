@@ -1,0 +1,28 @@
+$max: 16;
+$map: ( 850: 12, 450: 6, 380: 3 );
+
+@for $i from 1 through $max {
+  $eq: 100% / $i;
+  #grid.cell-#{$i} > div {
+    width: $eq;
+  }
+}
+
+@each $breakpoint, $columns in $map {
+  @media all and (max-width: $breakpoint + px) {
+    @for $i from 1 through $columns {
+      $eq: 100% / $i;
+      #grid.cell-#{$breakpoint}-#{$i} > div {
+        width: $eq;
+      }
+    }
+  }
+}
+
+#grid > div {
+  background-color: #ccc;
+  height: 25px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  float: left;
+}
