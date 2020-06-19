@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #333;
+}
+
+.box {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  cursor: move;
+}
+
+.box1 {
+  background-color: cadetblue;
+  top: 200px;
+  left: 300px;
+}
+
+.box2 {
+  background-color: orange;
+  top: 400px;
+  left: 700px;
+}
