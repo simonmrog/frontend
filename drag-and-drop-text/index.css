@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+[draggable="true"] {
+  user-select: none;
+  cursor: move;
+}
+
+.drag {
+  opacity: 0.25;
+}
