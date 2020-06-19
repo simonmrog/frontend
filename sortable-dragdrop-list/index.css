@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #333;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.box {
+  border: 2px solid black;
+  margin: 20px;
+  color: white;
+  font-weight: bold;
+  line-height: 200px;
+  font-size: 3em;
+  width: 300px;
+  height: 200px;
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: 0.1;
+}
