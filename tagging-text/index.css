@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .container {
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 30px 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #034f84;
+  color: white;
+  border-radius: 3px;
+  padding: 3px;
+  outline: none;
+}
