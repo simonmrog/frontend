@@ -1,0 +1,44 @@
+body {
+  background-color: #333;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.custom-select {
+  position: relative;
+  font-size: 1.3em;
+  width: 40em;
+}
+
+.custom-select .selected {
+  padding: 0.7em;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  user-select: none;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  /* top: -35px; */
+  padding: 0.7em 0;
+  background-color: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+}
+
+.dropdown-list .dropdown-item {
+  padding: 0.5em 1em;
+}
+
+.dropdown-list .dropdown-item:hover {
+  background-color: #ebecec;
+}
+
+.visible {
+  display: block;
+}
