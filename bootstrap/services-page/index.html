@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css" />
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- WELCOME SECTION -->
+  <section class="welcome">
+    <header class="header">
+
+      <!-- NAVIGATION BAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#!">My Site</a>
+          <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-2" id="navbarContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- WELCOME TEXT -->
+    <div class="welcome-text text-center px-4">
+      <p class="h5">Welcome to our webpage</p>
+      <h1 class="display-4 mb-4">We're pleased to meet you</h1>
+      <a class="btn btn-lg btn-primary" href="#">Get it touch</a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-us py-4 text-center">
+    <div class="container">
+      <img
+        src="images/about.svg"
+        alt="about"
+        width="181"
+        class="d-block img-fluid mx-auto my-4"
+      >
+      <h2 class="h3">ABOUT US</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Mauris finibus interdum sem, et varius augue pulvinar pharetra.
+        Etiam sem urna, volutpat et luctus a, tincidunt vitae sapien.
+        Nullam turpis justo, sodales aliquet turpis in, malesuada facilisis risus.
+        Ut fringilla maximus neque mollis iaculis.
+        Donec consectetur tincidunt turpis, eu aliquet ex tincidunt et.
+        Curabitur sem dui, ultricies id aliquam in, hendrerit vel nisl.
+        Phasellus quis pretium risus, vel pharetra velit.
+        Fusce volutpat tortor vel sapien efficitur viverra.
+        Ut aliquam, urna nec varius condimentum, sapien odio mollis velit,
+        ac egestas leo metus a quam. Aliquam porttitor vitae massa nec vulputate.
+        Nam vulputate lobortis sapien, sed elementum nulla tristique blandit.
+      </p>
+      <a
+        href="#"
+        class="btn btn-secondary btn-lg"
+        data-toggle="modal"
+        data-target="#about-us-modal"
+      >
+        More Info
+      </a>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="about-us-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>This is the info section about us</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services py-4 text-center">
+    <div class="container">
+      <h2 class="h3 mb-3">OUR SERVICES</h2>
+      <div class="row">
+        <div class="col-md-4 p-4">
+          <i class="fas fa-briefcase mb-2"></i>
+          <h3 class="h5">Cloud Apps</h3>
+          <p>Any company which requires cloud services to enhace their services</p>
+        </div>
+        <div class="col-md-4 p-4">
+          <i class="fas fa-bullhorn mb-2"></i>
+          <h3 class="h5">Software Creation</h3>
+          <p>Software optimized to work and improve the companies work</p>
+        </div>
+        <div class="col-md-4 p-4">
+          <i class="fas fa-check-square mb-2"></i>
+          <h3 class="h5">Custom Design</h3>
+          <p>Customized UI/UX designs to shine among the market</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects py-4 text-center">
+    <div class="container">
+      <h2 class="h3 mb-5">OUR PROJECTS</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#">
+            <img src="images/project1.svg" alt="Project 1" width="290" class="d-block img-fluid mx-auto mb-2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#">
+            <img src="images/project2.svg" alt="Project 2" width="290" class="d-block img-fluid mx-auto mb-2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#">
+            <img src="images/project3.svg" alt="Project 3" width="290" class="d-block img-fluid mx-auto mb-2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#">
+            <img src="images/project4.svg" alt="Project 1" width="290" class="d-block img-fluid mx-auto mb-2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#">
+            <img src="images/project5.svg" alt="Project 1" width="290" class="d-block img-fluid mx-auto mb-2">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#">
+            <img src="images/project6.svg" alt="Project 1" width="290" class="d-block img-fluid mx-auto mb-2">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4 text-center">
+    <div class="container">
+      Footer &copy; 2020
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
