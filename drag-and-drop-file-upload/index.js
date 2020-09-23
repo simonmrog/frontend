@@ -32,7 +32,6 @@ function main() {
       inputElement.files = e.dataTransfer.files;
       updateThumbnail(e.dataTransfer.files[0]);
     }
-    console.log(e.dataTransfer.files);
     dropzoneElement.classList.remove("dropzone-over");
   });
 }
