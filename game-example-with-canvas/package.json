@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node backend/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
